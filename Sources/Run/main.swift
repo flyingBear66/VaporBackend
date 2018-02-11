@@ -55,4 +55,17 @@ drop.post("helloPost") { request in
     ])
 }
 
+let hc = HelloController()
+drop.get("helloCont", handler: hc.sayHello)
+
 try drop.run()
+
+
+
+
+
+
+
+
+
+
