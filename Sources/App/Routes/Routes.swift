@@ -7,6 +7,14 @@ extension Droplet {
             try json.set("hello", "world")
             return json
         }
+        
+        get("test123") { req in
+            var json = JSON()
+            try json.set("test1", "one")
+            try json.set("test2", "two")
+
+            return json
+        }
 
         get("plaintext") { req in
             return "Hello, world!"
